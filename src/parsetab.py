@@ -5,9 +5,9 @@ _tabversion = '3.8'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'DB245B194B01920EA43DD8C40C2F431F'
+_lr_signature = '828E0F975807A64DC92E341769CB9A00'
     
-_lr_action_items = {'DIVIDE':([4,8,10,14,15,21,23,25,26,27,28,29,30,31,32,],[-13,18,-14,18,-14,-11,18,18,-12,18,18,-10,18,-9,18,]),'BEGIN':([0,],[1,]),'END':([0,],[7,]),'NAME':([0,6,9,11,13,16,17,18,19,20,22,],[10,15,15,15,15,15,15,15,15,15,15,]),'DUMP':([0,],[3,]),'NUMBER':([0,6,9,11,13,16,17,18,19,20,22,],[4,4,4,4,4,4,4,4,4,4,4,]),'BEGIN_READONLY':([0,],[5,]),'TIMES':([4,8,10,14,15,21,23,25,26,27,28,29,30,31,32,],[-13,20,-14,20,-14,-11,20,20,-12,20,20,-10,20,-9,20,]),'EQUALS':([10,],[22,]),'PLUS':([4,8,10,14,15,21,23,25,26,27,28,29,30,31,32,],[-13,17,-14,17,-14,-11,17,17,-12,17,-7,-10,-8,-9,17,]),'LPAREN':([0,1,3,5,6,7,9,11,13,16,17,18,19,20,22,],[6,11,12,13,6,16,6,6,6,6,6,6,6,6,6,]),'RPAREN':([4,12,14,15,21,23,25,26,27,28,29,30,31,],[-13,24,26,-14,-11,33,34,-12,35,-7,-10,-8,-9,]),'MINUS':([0,4,6,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31,32,],[9,-13,9,19,9,-14,9,9,19,-14,9,9,9,9,9,-11,9,19,19,-12,19,-7,-10,-8,-9,19,]),'$end':([2,4,8,10,15,21,24,26,28,29,30,31,32,33,34,35,],[0,-13,-6,-14,-14,-11,-4,-12,-7,-10,-8,-9,-5,-1,-2,-3,]),}
+_lr_action_items = {'QUIT':([0,23,],[13,13,]),'BEGIN':([0,23,],[7,7,]),'DIVIDE':([3,14,16,20,21,26,35,40,42,43,45,47,48,49,50,66,],[-25,-26,31,-23,-26,31,31,31,31,-24,31,31,-22,31,-21,31,]),'END':([0,23,],[9,9,]),'NAME':([0,6,11,18,19,22,23,24,25,27,28,29,30,31,32,33,51,53,55,57,65,],[14,21,21,21,37,37,14,21,21,21,21,21,21,21,21,21,60,37,21,63,21,]),'DUMP':([0,23,],[1,1,]),'READ':([0,23,],[2,2,]),'NUMBER':([0,6,11,18,23,24,25,27,28,29,30,31,32,33,55,65,],[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,]),'BEGIN_READONLY':([0,23,],[4,4,]),'TIMES':([3,14,16,20,21,26,35,40,42,43,45,47,48,49,50,66,],[-25,-26,33,-23,-26,33,33,33,33,-24,33,33,-22,33,-21,33,]),'WRITE':([0,23,],[10,10,]),'COMMA':([3,20,21,35,37,40,42,43,47,48,49,50,63,],[-25,-23,-26,51,53,55,57,-24,-19,-22,-20,-21,65,]),'PLUS':([3,14,16,20,21,26,35,40,42,43,45,47,48,49,50,66,],[-25,-26,30,-23,-26,30,30,30,30,-24,30,-19,-22,-20,-21,30,]),'LPAREN':([0,1,2,4,6,7,9,10,11,12,15,18,23,24,25,27,28,29,30,31,32,33,55,65,],[11,17,18,19,11,22,24,25,11,27,29,11,11,11,11,11,11,11,11,11,11,11,11,11,]),'FAIL':([0,23,],[12,12,]),'RPAREN':([3,17,20,21,26,36,37,38,40,41,43,44,46,47,48,49,50,60,61,62,66,],[-25,34,-23,-26,43,52,-15,54,-17,56,-24,58,59,-19,-22,-20,-21,64,-16,-18,67,]),'EQUALS':([14,],[28,]),'RECOVER':([0,23,],[15,15,]),'MINUS':([0,3,6,11,14,16,18,20,21,23,24,25,26,27,28,29,30,31,32,33,35,40,42,43,45,47,48,49,50,55,65,66,],[6,-25,6,6,-26,32,6,-23,-26,6,6,6,32,6,6,6,6,6,6,6,32,32,32,-24,32,-19,-22,-20,-21,6,6,32,]),'SEMICOLON':([3,8,13,14,16,20,21,34,43,45,47,48,49,50,52,54,56,58,59,64,67,],[-25,23,-4,-26,-14,-23,-26,-12,-24,-13,-19,-22,-20,-21,-6,-5,-7,-8,-9,-10,-11,]),'$end':([0,3,5,8,13,14,16,20,21,23,34,39,43,45,47,48,49,50,52,54,56,58,59,64,67,],[-1,-25,0,-2,-4,-26,-14,-23,-26,-1,-12,-3,-24,-13,-19,-22,-20,-21,-6,-5,-7,-8,-9,-10,-11,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -16,7 +16,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'expression':([0,6,9,11,13,16,17,18,19,20,22,],[8,14,21,23,25,27,28,29,30,31,32,]),'statement':([0,],[2,]),}
+_lr_goto_items = {'namelist':([19,22,53,],[36,38,61,]),'expression':([0,6,11,18,23,24,25,27,28,29,30,31,32,33,55,65,],[16,20,26,35,16,40,42,40,45,40,47,48,49,50,40,66,]),'statement':([0,23,],[8,8,]),'stmtlist':([0,23,],[5,39,]),'exprlist':([24,27,29,55,],[41,44,46,62,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -25,19 +25,31 @@ for _k, _v in _lr_goto_items.items():
        _lr_goto[_x][_k] = _y
 del _lr_goto_items
 _lr_productions = [
-  ("S' -> statement","S'",1,None,None,None),
-  ('statement -> BEGIN LPAREN expression RPAREN','statement',4,'p_statement_begin_transaction','adb.py',78),
-  ('statement -> BEGIN_READONLY LPAREN expression RPAREN','statement',4,'p_statement_begin_readonly_transaction','adb.py',82),
-  ('statement -> END LPAREN expression RPAREN','statement',4,'p_statement_end_transaction','adb.py',86),
-  ('statement -> DUMP LPAREN RPAREN','statement',3,'p_statement_dump','adb.py',90),
-  ('statement -> NAME EQUALS expression','statement',3,'p_statement_assign','adb.py',94),
-  ('statement -> expression','statement',1,'p_statement_expr','adb.py',98),
-  ('expression -> expression PLUS expression','expression',3,'p_expression_binop','adb.py',102),
-  ('expression -> expression MINUS expression','expression',3,'p_expression_binop','adb.py',103),
-  ('expression -> expression TIMES expression','expression',3,'p_expression_binop','adb.py',104),
-  ('expression -> expression DIVIDE expression','expression',3,'p_expression_binop','adb.py',105),
-  ('expression -> MINUS expression','expression',2,'p_expression_uminus','adb.py',112),
-  ('expression -> LPAREN expression RPAREN','expression',3,'p_expression_group','adb.py',116),
-  ('expression -> NUMBER','expression',1,'p_expression_number','adb.py',120),
-  ('expression -> NAME','expression',1,'p_expression_name','adb.py',124),
+  ("S' -> stmtlist","S'",1,None,None,None),
+  ('stmtlist -> <empty>','stmtlist',0,'p_stmtlist_0','adb.py',85),
+  ('stmtlist -> statement','stmtlist',1,'p_stmtlist_1','adb.py',89),
+  ('stmtlist -> statement SEMICOLON stmtlist','stmtlist',3,'p_stmtlist_2','adb.py',93),
+  ('statement -> QUIT','statement',1,'p_statement_quit','adb.py',97),
+  ('statement -> BEGIN LPAREN namelist RPAREN','statement',4,'p_statement_begin_transaction','adb.py',101),
+  ('statement -> BEGIN_READONLY LPAREN namelist RPAREN','statement',4,'p_statement_begin_readonly_transaction','adb.py',110),
+  ('statement -> END LPAREN exprlist RPAREN','statement',4,'p_statement_end_transaction','adb.py',119),
+  ('statement -> FAIL LPAREN exprlist RPAREN','statement',4,'p_statement_fail','adb.py',125),
+  ('statement -> RECOVER LPAREN exprlist RPAREN','statement',4,'p_statement_recover','adb.py',130),
+  ('statement -> READ LPAREN expression COMMA NAME RPAREN','statement',6,'p_statement_read','adb.py',135),
+  ('statement -> WRITE LPAREN expression COMMA NAME COMMA expression RPAREN','statement',8,'p_statement_write','adb.py',139),
+  ('statement -> DUMP LPAREN RPAREN','statement',3,'p_statement_dump','adb.py',143),
+  ('statement -> NAME EQUALS expression','statement',3,'p_statement_assign','adb.py',147),
+  ('statement -> expression','statement',1,'p_statement_expr','adb.py',151),
+  ('namelist -> NAME','namelist',1,'p_namelist_1','adb.py',155),
+  ('namelist -> NAME COMMA namelist','namelist',3,'p_namelist_2','adb.py',159),
+  ('exprlist -> expression','exprlist',1,'p_exprlist_1','adb.py',163),
+  ('exprlist -> expression COMMA exprlist','exprlist',3,'p_exprlist_2','adb.py',167),
+  ('expression -> expression PLUS expression','expression',3,'p_expression_binop','adb.py',171),
+  ('expression -> expression MINUS expression','expression',3,'p_expression_binop','adb.py',172),
+  ('expression -> expression TIMES expression','expression',3,'p_expression_binop','adb.py',173),
+  ('expression -> expression DIVIDE expression','expression',3,'p_expression_binop','adb.py',174),
+  ('expression -> MINUS expression','expression',2,'p_expression_uminus','adb.py',181),
+  ('expression -> LPAREN expression RPAREN','expression',3,'p_expression_group','adb.py',185),
+  ('expression -> NUMBER','expression',1,'p_expression_number','adb.py',189),
+  ('expression -> NAME','expression',1,'p_expression_name','adb.py',193),
 ]
